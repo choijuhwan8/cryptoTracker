@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 
-
 interface RouteParams {
-    coinId: string;
+  coinId: string;
 }
 
 function Coin() {
@@ -10,3 +9,4 @@ function Coin() {
   return <h1>Coin: {coinId}</h1>;
 }
 export default Coin;
+fdsa;
