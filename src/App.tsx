@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import Router from "./Router";
 import React from "react";
- 
+
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 html, body, div, span, applet, object, iframe,
@@ -35,6 +35,9 @@ footer, header, hgroup, main, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-weight: 300;
+  color:${(props) => props.theme.textColor};
+  line-height: 1.2;
 }
 menu, ol, ul {
   list-style: none;
